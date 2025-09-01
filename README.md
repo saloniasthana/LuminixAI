@@ -1,69 +1,40 @@
-# React + TypeScript + Vite
+🌌 Luminix AI Prototype
+Luminix AI is a modern AI-powered chat interface built as a frontend prototype to showcase clean UI/UX practices and component-driven architecture. The project demonstrates how to design an intelligent, user-friendly, and highly customizable chat system. A modern AI Chat Interface built with React + TypeScript + Vite + TailwindCSS, featuring theme management, chat session handling, accessibility improvements.
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Research
+- **Platforms Reviewed**: OpenAI ChatGPT UI, Anthropic Claude, Poe, Perplexity.
+- **Chosen Features**:
+  - Model selector dropdown
+  - Dark/Light theme toggle
+  - Accessible keyboard navigation
+  - Smooth hover/focus animations
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 Design
+- **Tailwind Mapping**:
+  - `bg-gray-900` → Dark mode container
+  - `p-4` → Chat bubble padding
+  - `rounded-2xl` → Bubble radius
+  - `focus:ring-2` → Accessibility outlines
+  - 
+---
 
-## Expanding the ESLint configuration
+## 💻 Development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Tech Stack
+- **Frontend**: React + TypeScript + Vite
+- **Styling**: Tailwind CSS + Framer Motion
+- **State Management**: React Context API
+- **Mock API**: `/data/messages.json`
+- **Storybook**: Component library with `Button`, `Slider`, `Modal`, `ChatBubble`
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Implementation Notes
+- **Accessibility**: All interactive elements are keyboard-navigable with ARIA labels.
+- **Animations**: Framer Motion adds micro-interactions.
+- **Known Limitations**:
+  - Currently using a mock API, no backend model calls.
+  - Limited models hardcoded in dropdown.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---

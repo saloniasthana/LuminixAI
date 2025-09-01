@@ -1,5 +1,5 @@
-🌌 Luminix AI Prototype
-Luminix AI is a modern AI-powered chat interface built as a frontend prototype to showcase clean UI/UX practices and component-driven architecture. The project demonstrates how to design an intelligent, user-friendly, and highly customizable chat system. A modern AI Chat Interface built with React + TypeScript + Vite + TailwindCSS, featuring theme management, chat session handling, accessibility improvements.
+## 🌌 Luminix AI Prototype
+**Luminix AI is a modern AI-powered chat interface built as a frontend prototype to showcase clean UI/UX practices and component-driven architecture. The project demonstrates how to design an intelligent, user-friendly, and highly customizable chat system. A modern AI Chat Interface built with React + TypeScript + Vite + TailwindCSS, featuring theme management, chat session handling, accessibility improvements.**
 ---
 
 ## 📌 Research
